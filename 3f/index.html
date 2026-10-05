@@ -5,8 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Akikito apt. 3F — House Manual</title>
 <link rel="stylesheet" href="../style.css">
+<style>
+  /* language switching: only the active language is shown */
+  html[lang="en"] [lang="ja"], html[lang="ja"] [lang="en"] { display: none !important; }
+  .langbar { background: #0e3d33; padding: 10px 16px; text-align: right; }
+  .langswitch { display: inline-flex; background: #fff; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+  .langswitch button { border: none; background: none; padding: 7px 14px; font-size: .85rem; font-weight: 700; color: var(--muted); cursor: pointer; }
+  .langswitch button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+  .red { color: #d00; font-weight: 700; }
+  .blue { color: #1a3fd0; font-weight: 700; }
+</style>
 </head>
 <body>
+
+<div class="langbar"><div class="langswitch" role="group" aria-label="Language">
+  <button type="button" data-lang="en" aria-pressed="true">English</button>
+  <button type="button" data-lang="ja" aria-pressed="false">日本語</button>
+</div></div>
+
+<div lang="en">
 
 <header class="hero">
   <h1>Akikito apt. 3F</h1>
@@ -546,6 +563,250 @@
   Akikito apt. 3F — House Manual · Thank you for staying with us. Enjoy your time in Tokyo!
 </footer>
 
+</div>
+
+<div lang="ja">
+
+<header class="hero">
+  <h1>Akikito apt. 3F ハウスマニュアル</h1>
+</header>
+
+<nav>
+  <div class="inner">
+    <a href="#ja-access">解錠・防音扉</a>
+    <a href="#ja-noise">騒音・宅配</a>
+    <a href="#ja-window">窓の開閉</a>
+    <a href="#ja-manuals">設備品の取扱説明書</a>
+    <a href="#ja-laundry">お洗濯</a>
+    <a href="#ja-garbage">ゴミの出し方</a>
+  </div>
+</nav>
+
+<main>
+
+  <section id="ja-access">
+    <h2><span class="emoji">🔑</span> パスワード解錠扉</h2>
+    <div class="card split">
+      <div>
+        <p class="red">お部屋は一度閉めるとロックがかかります。必ずパスコードの控えを記憶したスマホか紙をお持ちください。</p>
+        <p>正しいパスワードを押して下の<span class="red">赤▽</span>を押すと開きます。開かない場合は一度上の<span class="blue">青い□ボタン</span>を押しリセットしてからパスワードを押し直します。</p>
+      </div>
+      <figure><img src="images/door-keypad.jpg" alt="パスワード解錠扉"></figure>
+    </div>
+
+    <div class="card split rev">
+      <figure><img src="images/inner-door.jpg" alt="防音扉"></figure>
+      <div>
+        <h3>防音外扉</h3>
+        <p><span class="red">閑静な通りに面しています。</span></p>
+        <p class="red">内扉は全く防音されませんので常に外扉をお閉めおきください。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ja-noise">
+    <h2><span class="emoji">🤝</span> 騒音・宅配について</h2>
+    <div class="card">
+      <h3>騒音について</h3>
+      <p>近隣には「Airbnbは騒音を出す」というステレオタイプな考えの方がお住まいです。</p>
+      <p class="red">3Fの入り口までの外階段、5Fのランドリールームへ向かう外階段では会話やイヤホン無しで音を鳴らしながらのスマホの携帯はお控えください。</p>
+      <p>お部屋の防音扉をしっかりおしめ置きいただければパーティーをされても大丈夫です。コンクリート打ちっ放しの建物に付き、低音は比較的響く場合があります。10時以降に低音の響くダンスミュージックなどをかける時のみ他の階のゲストのためにボリュームを絞ってください。</p>
+    </div>
+
+    <div class="card">
+      <h3>宅配について</h3>
+      <p>Uber eatsやAmazonなどの宅配はお部屋までは入って来れません。</p>
+      <p class="red">Uber eatsなどのフードデリバリは必ず到着時に電話をしてもらい、3Fのエントランスで受け取ってください。</p>
+      <p>Amazonなどの宅配はホストがいる場合は受け取り、お部屋のお前においておきます。不在票がポストに入っていた場合は不在票をお部屋のドアに貼っておきます。</p>
+      <p class="red">郵便物は、必ずお名前の前に「田中 方」をお付けください。</p>
+      <p><strong>〒150-0013</strong><br>渋谷区恵比寿2-21-2 Akikito apt. 3F 田中 方<br>お名前</p>
+      <p>となります。郵便物は防音扉の内側に青いプラスチックの入れ物にいれて置いておきます。</p>
+    </div>
+  </section>
+
+  <section id="ja-window">
+    <h2><span class="emoji">🪟</span> 窓の開閉</h2>
+    <div class="card">
+      <span class="tag">注意</span>
+      <h3>右手前の窓</h3>
+      <p>以前のゲストがサポートバーのボタンを押さずにこの窓を無理に閉めたため、少し開閉が固くなっています。</p>
+      <p>窓を開け閉めするときは、<strong>必ずサポートバーのボタンを押し</strong>、やさしく扱ってください。無理に動かすと、完全に動かなくなることがあります。</p>
+      <div class="figrow">
+        <figure><img src="images/ja/window-instructions.jpg" alt="窓のサポートバーとストッパーの説明"><figcaption>ストッパーがサポートバーの穴に収まり、開き具合は2段階。</figcaption></figure>
+        <figure><img src="images/ja/window-button.jpg" alt="サポートバーのボタン"><figcaption>窓を動かす前にこのボタンを押します。</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="ja-manuals">
+    <h2><span class="emoji">📖</span> 設備品の取扱説明書</h2>
+
+    <div class="card">
+      <h3>TP-Link Wi-Fi 無線LAN ルーター</h3>
+      <p>11ac AC2600 1733 + 800 Mbps MU-MIMO IPv6 デュアルバンド ギガビット Archer A10</p>
+      <dl class="kv">
+        <dt>SSID</dt><dd>TP-Link_A8B8</dd>
+        <dt>SSID (5G)</dt><dd>TP-Link_A8B8_5G</dd>
+        <dt>パスワード (PIN)</dt><dd>60707956</dd>
+      </dl>
+      <p>wi-fiルーターはディスプレイの裏にあります。ネットがつながりにくい場合は、ルーターの電源を一旦抜いて挿し直し、リセットしていただければ繋がる様になります。</p>
+      <p>取説はこちら： <a href="https://www.tp-link.com/jp/support/download/archer-a2600/" target="_blank" rel="noopener">TP-Link Archer A2600 サポート</a></p>
+    </div>
+
+    <div class="card">
+      <h3>BOSE TV Speaker Bluetooth/HDMI</h3>
+      <p><a href="https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/speakers/bose_tv_speaker/pdf/852004_og_tv-speaker_ja.pdf" target="_blank" rel="noopener">取扱説明書 (PDF)</a></p>
+      <p>うまく接続できない場合のトラブルシューティング：<br><a href="https://www.bose.co.jp/ja_jp/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/bose-tv-speaker.html" target="_blank" rel="noopener">BOSE TV Speaker サポート</a></p>
+      <p>まれにAndroid 6などのOSによっては接続が難しい場合があります。以下もご参照ください。<br><a href="https://www.bose.co.jp/ja_jp/support/article/bose-app-does-not-detect-device.html" target="_blank" rel="noopener">Boseアプリがデバイスを検出しない場合</a></p>
+    </div>
+
+    <div class="card">
+      <h3>DMM.make モニター ディスプレイ 55インチ</h3>
+      <p><strong>HDMI1</strong>：Chrome cast　<strong>HDMI3</strong>：HDMIケーブル（PC・ゲーム機を繋げます。）</p>
+      <p><a href="https://distribution.dmm.com/data/display/dks-dg3/DKS-4KDG3_UserManual.pdf" target="_blank" rel="noopener">取扱説明書 (PDF)</a></p>
+      <p>テレビはありませんが、Chrome castが接続されていますので、お手持ちのスマホにGoogle homeをインストールして下記の要領でキャストしてください。</p>
+      <ol>
+        <li>対応アプリ（Netflix、Amazon Prime Video、YouTube Premiumなど）を開き、キャストアイコン（四角形の左下にWi-Fiマークが付いたアイコン）を探します。</li>
+        <li>キャストアイコンをタップし、先ほど設定したChromecastを選びます。</li>
+        <li>スマートフォンから、Chromecastにつながったディスプレイへ映像の再生が始まります。</li>
+      </ol>
+      <p>詳しくは「<a href="https://behomaznakikito.github.io/chromecast-guide/" target="_blank" rel="noopener">Chromecast搭載ディスプレイの使い方</a>」ページをご覧ください。</p>
+    </div>
+
+    <div class="card">
+      <h3>IHクッキングヒーター</h3>
+      <p><a href="https://www.sanka-kogyo.co.jp/docs/manual/sih/I-0473-02.pdf" target="_blank" rel="noopener">取扱説明書 (PDF)</a></p>
+    </div>
+
+    <div class="card">
+      <h3>MAKITA 充電式クリーナー</h3>
+      <p><a href="https://www.makita.co.jp/product/files/881A66G3_D4398.pdf" target="_blank" rel="noopener">取扱説明書 (PDF)</a></p>
+    </div>
+
+    <div class="card">
+      <h3>ジャー炊飯器</h3>
+      <p><a href="https://jp.sharp/support/ricecooker/doc/kscf05b.pdf?productId=KS-CF05B" target="_blank" rel="noopener">取扱説明書 (PDF)</a></p>
+    </div>
+
+    <div class="card">
+      <h3>オーブンレンジ</h3>
+      <p><a href="https://www.irisohyama.co.jp/products/manual/pdf/516309.pdf" target="_blank" rel="noopener">取扱説明書 (PDF)</a></p>
+    </div>
+
+    <div class="card">
+      <h3>FIELDOOR 可変式 クイックダンベル/ブロックダンベル 40.5kg</h3>
+      <div class="figrow">
+        <figure><img src="images/dumbbell-adjust.jpg" alt="ストッパーを差して重量を調節する"></figure>
+        <figure><img src="images/dumbbell-weights.jpg" alt="ダンベルの重量設定"></figure>
+      </div>
+      <figure style="max-width:720px; margin:12px auto"><img src="images/dumbbell-table.jpg" alt="重量設定表"></figure>
+      <ul>
+        <li><a href="https://www.ottostyle.jp/manual/a14342/index.html" target="_blank" rel="noopener">使用例・取扱説明</a></li>
+        <li><a href="https://www.ottostyle.jp/movie/a14342/index.html" target="_blank" rel="noopener">動画</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>ウルトラスポーツ 懸垂バー 3ハンドルタイプ</h3>
+      <p>耐荷重350kg チンニング器具</p>
+      <p>（天井が平らでないため握るとガタつきがありますが耐荷重350kg に問題はありませんので安心してご使用ください。）</p>
+      <figure style="max-width:420px; margin:12px auto"><img src="images/pullup-bar.jpg" alt="懸垂バー"></figure>
+    </div>
+
+    <div class="card">
+      <h3>懸垂サポートチューブ</h3>
+      <p>足を引っ掛けて使います。</p>
+      <div class="figrow">
+        <figure><img src="images/resistance-band.jpg" alt="TheFitLife サポートチューブ"></figure>
+        <figure><img src="images/band-use.jpg" alt="サポートチューブの使い方"></figure>
+      </div>
+    </div>
+
+    <div class="card split">
+      <div>
+        <h3>無印良品 加湿器</h3>
+        <p>コードレスアロマディフューザー MJ-CAD1 44486320</p>
+        <p>取説： <a href="https://www.muji.com/public/media/jp/doc/item/01_4550344486320_00001.pdf" target="_blank" rel="noopener">取扱説明書 (PDF)</a></p>
+      </div>
+      <figure><img src="images/aroma-diffuser.jpg" alt="無印良品 加湿器"></figure>
+    </div>
+
+    <div class="card">
+      <h3>セラミックヒーター</h3>
+      <div class="figrow">
+        <figure><img src="images/ja/heater-1.jpg" alt="セラミックヒーター"></figure>
+        <figure><img src="images/ja/heater-switch.jpg" alt="背面のメイン電源スイッチ"></figure>
+      </div>
+      <p>先ず背面のスイッチを入れます。その後、上面の右側のON/OFFスイッチを押すとヒーターが作動します。</p>
+      <figure style="max-width:520px; margin:12px auto"><img src="images/ja/heater-panel.jpg" alt="ヒーター上面の操作パネル"></figure>
+      <p>送風ボタンを押すとヒーターが止まり風になります。</p>
+    </div>
+
+    <div class="card split">
+      <div>
+        <h3>耐熱ガラスカップ</h3>
+        <p>耐熱ガラスカップです。コーヒー紅茶にお使いください。</p>
+        <p class="red">上下段は耐熱</p>
+      </div>
+      <figure><img src="images/glass-cups.jpg" alt="耐熱ガラスカップ"></figure>
+    </div>
+
+    <div class="card">
+      <h3>折りたたみ式キャンプテーブル</h3>
+      <p>3段階の高さが選べます。この他下の足を外すと座卓の高さになります。</p>
+      <div class="figrow">
+        <figure><img src="images/folding-table.jpg" alt="折りたたまれたキャンプテーブル"></figure>
+        <figure><img src="images/ja/table-heights.jpg" alt="テーブルの高さ（70cm・56cm）"></figure>
+        <figure><img src="images/ja/table-steps.jpg" alt="テーブルの組み立て方"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="ja-laundry">
+    <h2><span class="emoji">🧺</span> お洗濯／ランドリー・ベッドウェア</h2>
+
+    <div class="card split">
+      <div>
+        <h3>お洗濯／ランドリー</h3>
+        <p>ここから3分のところに、<a href="https://maps.app.goo.gl/TG7eVFaRaJCDpAfT8" target="_blank" rel="noopener">コインランドリー大吉</a>がありますのでご利用ください。また広尾駅前の銭湯にもコインランドリーがあります。洗濯物を入れるネットとして下記をご利用ください。</p>
+        <p>一週間以上ご滞在の方は、部屋入った正面の壁にかかっている黒い円盤が洗濯ネットですので、それに洗濯物を入れてお部屋の外においてください。回収して6時間後に仕上げて部屋の前に置いておきます。無料です。なお一週間以内の滞在の方も2000円で洗濯サービスをお受けできます。</p>
+      </div>
+      <figure><img src="images/laundry-basket-wall.jpg" alt="壁にかかった洗濯ネット"></figure>
+    </div>
+
+    <div class="card">
+      <h3>ベッドウェア・バスウェア・タオルのお取り替え</h3>
+      <p>シーツ・布団／枕カバー、バスタオル／フェイスタオル／ハンドタオル、バスローブ一式の<span class="red">お取り替えは2000円で提供しています。</span></p>
+      <p>お部屋の前に使用済み一式をカゴに入れてお出しください。カゴにお取り替え一式をカゴに入れておいておきます。</p>
+    </div>
+  </section>
+
+  <section id="ja-garbage">
+    <h2><span class="emoji">🗑️</span> ゴミの出し方</h2>
+    <div class="card split">
+      <div>
+        <p class="red">ゴミはビルの前の階段の右に朝8時ころ出してください。（深夜には出さないでください）</p>
+        <ul>
+          <li>土曜日：資源ごみ（新聞雑誌段ボール・缶瓶・ペットボトル・プラスチック容器・ビニール袋 を中を良く洗って種類別に袋に詰める）</li>
+          <li>月・木曜日：可燃ごみ（紙・ゴム・ビニール袋に密封した食べ残し）</li>
+          <li>毎月第一金曜日：不燃ごみ（陶器・金属・ガラス）</li>
+          <li>粗大ゴミ（コンビニで粗大ゴミ券を購入）：予約制tel03-5296-7000</li>
+        </ul>
+        <p>階段のすぐ右側に出してください。</p>
+        <p>詳しいゴミの出し方は、こちらのpdfをご覧ください。<br><a href="https://www.city.shibuya.tokyo.jp/assets/kurashi/000049725.pdf" target="_blank" rel="noopener">渋谷区ごみ・資源の分け方 (PDF)</a></p>
+      </div>
+      <figure><img src="images/trash-location.jpg" alt="ゴミ置き場"></figure>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Akikito apt. 3F ハウスマニュアル
+</footer>
+
+</div>
+
 <button id="backToTop" aria-label="Back to top" title="Back to top"><img src="images/upBtn.svg" alt=""></button>
 
 <script>
@@ -556,6 +817,17 @@
   backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+  const buttons = document.querySelectorAll('.langswitch button');
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+    document.title = lang === 'ja' ? 'Akikito apt. 3F ハウスマニュアル' : 'Akikito apt. 3F — House Manual';
+    buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
+    try { localStorage.setItem('lang', lang); } catch (e) {}
+  }
+  buttons.forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+  let initial = 'en';
+  try { initial = localStorage.getItem('lang') || initial; } catch (e) {}
+  setLang(initial);
 </script>
 
 </body>
