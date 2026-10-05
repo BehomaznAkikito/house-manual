@@ -8,7 +8,8 @@
 <style>
   /* language switching: only the active language is shown */
   html[lang="en"] [lang="ja"], html[lang="ja"] [lang="en"] { display: none !important; }
-  .langswitch { position: fixed; top: 12px; right: 12px; z-index: 200; display: flex; background: #fff; border: 1px solid var(--line); border-radius: 999px; box-shadow: 0 2px 8px rgba(20,40,60,.15); overflow: hidden; }
+  .langbar { background: #0e3d33; padding: 10px 16px; text-align: right; }
+  .langswitch { display: inline-flex; background: #fff; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
   .langswitch button { border: none; background: none; padding: 7px 14px; font-size: .85rem; font-weight: 700; color: var(--muted); cursor: pointer; }
   .langswitch button[aria-pressed="true"] { background: var(--accent); color: #fff; }
   .red { color: #d00; font-weight: 700; }
@@ -17,10 +18,10 @@
 </head>
 <body>
 
-<div class="langswitch" role="group" aria-label="Language">
+<div class="langbar"><div class="langswitch" role="group" aria-label="Language">
   <button type="button" data-lang="en" aria-pressed="true">English</button>
   <button type="button" data-lang="ja" aria-pressed="false">日本語</button>
-</div>
+</div></div>
 
 <div lang="en">
 
@@ -639,7 +640,7 @@
     try { localStorage.setItem('lang', lang); } catch (e) {}
   }
   buttons.forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
-  let initial = (navigator.language || '').startsWith('ja') ? 'ja' : 'en';
+  let initial = 'en';
   try { initial = localStorage.getItem('lang') || initial; } catch (e) {}
   setLang(initial);
 </script>
