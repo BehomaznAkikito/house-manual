@@ -5,8 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Akikito apt. 4F — House Manual</title>
 <link rel="stylesheet" href="../style.css">
+<style>
+  /* language switching: only the active language is shown */
+  html[lang="en"] [lang="ja"], html[lang="ja"] [lang="en"] { display: none !important; }
+  .langswitch { position: fixed; top: 12px; right: 12px; z-index: 200; display: flex; background: #fff; border: 1px solid var(--line); border-radius: 999px; box-shadow: 0 2px 8px rgba(20,40,60,.15); overflow: hidden; }
+  .langswitch button { border: none; background: none; padding: 7px 14px; font-size: .85rem; font-weight: 700; color: var(--muted); cursor: pointer; }
+  .langswitch button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+  .red { color: #d00; font-weight: 700; }
+  .blue { color: #1a3fd0; font-weight: 700; }
+</style>
 </head>
 <body>
+
+<div class="langswitch" role="group" aria-label="Language">
+  <button type="button" data-lang="en" aria-pressed="true">English</button>
+  <button type="button" data-lang="ja" aria-pressed="false">日本語</button>
+</div>
+
+<div lang="en">
 
 <header class="hero">
   <h1>Akikito apt. 4F</h1>
@@ -417,6 +433,194 @@
   Akikito apt. 4F — House Manual · Thank you for staying with us. Enjoy your time in Tokyo!
 </footer>
 
+</div>
+
+<div lang="ja">
+
+<header class="hero">
+  <h1>Akikito apt. 4F ハウスマニュアル</h1>
+</header>
+
+<nav>
+  <div class="inner">
+    <a href="#ja-access">解錠・防音扉</a>
+    <a href="#ja-noise">騒音・宅配</a>
+    <a href="#ja-window">窓の開閉</a>
+    <a href="#ja-manuals">設備品の取扱説明書</a>
+    <a href="#ja-laundry">お洗濯</a>
+    <a href="#ja-garbage">ゴミの出し方</a>
+  </div>
+</nav>
+
+<main>
+
+  <section id="ja-access">
+    <h2><span class="emoji">🔑</span> パスワード解錠扉</h2>
+    <div class="card split">
+      <div>
+        <p class="red">お部屋は一度閉めるとロックがかかります。必ずパスコードの控えを記憶したスマホか紙をお持ちください。</p>
+        <p>正しいパスワードを押して下の<span class="red">赤▽</span>を押すと開きます。開かない場合は一度上の<span class="blue">青い□ボタン</span>を押しリセットしてからパスワードを押し直します。</p>
+      </div>
+      <figure><img src="images/door-keypad.jpg" alt="パスワード解錠扉"></figure>
+    </div>
+
+    <div class="card split rev">
+      <figure><img src="images/inner-door.jpg" alt="防音内扉のレバー"></figure>
+      <div>
+        <h3>防音内扉</h3>
+        <p><span class="red">閑静な通りに面しています。</span></p>
+        <p class="red">外扉は全く防音されませんので常に内扉をお閉めおきください。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ja-noise">
+    <h2><span class="emoji">🤝</span> 騒音・宅配について</h2>
+    <div class="card">
+      <h3>騒音について</h3>
+      <p>近隣には「Airbnbは騒音を出す」というステレオタイプな考えの方がお住まいです。</p>
+      <p class="red">3Fの入り口までの外階段、5Fのランドリールームへ向かう外階段では会話やイヤホン無しで音を鳴らしながらのスマホの携帯はお控えください。</p>
+      <p>お部屋の防音扉をしっかりおしめ置きいただければパーティーをされても大丈夫です。コンクリート打ちっ放しの建物に付き、低音は比較的響く場合があります。10時以降に低音の響くダンスミュージックなどをかける時のみ他の階のゲストのためにボリュームを絞ってください。</p>
+    </div>
+
+    <div class="card">
+      <h3>宅配について</h3>
+      <p>Uber eatsやAmazonなどの宅配はお部屋までは入って来れません。</p>
+      <p class="red">Uber eatsなどのフードデリバリは必ず到着時に電話をしてもらい、3Fのエントランスで受け取ってください。</p>
+      <p>Amazonなどの宅配はホストがいる場合は受け取り、お部屋のお前においておきます。不在票がポストに入っていた場合は不在票をお部屋のドアに貼っておきます。</p>
+    </div>
+  </section>
+
+  <section id="ja-window">
+    <h2><span class="emoji">🪟</span> 窓の開閉</h2>
+    <div class="card">
+      <span class="tag">注意</span>
+      <h3>机の左側の窓</h3>
+      <p>この窓を開けたら、閉める前に<strong>必ず窓枠の下にあるサポートバーのボタンを押してください</strong>。ボタンを押さずに無理に閉めると、窓が引っかかって、その後開閉できなくなることがあります。</p>
+      <p>ボタンの下のストッパーは、サポートバーの穴の1つに収まり、窓の開き具合を2段階で調整できます。</p>
+      <div class="figrow">
+        <figure><img src="images/ja/window-instructions.jpg" alt="窓のサポートバーとストッパーの説明"><figcaption>ストッパーがサポートバーの穴に収まり、開き具合は2段階。</figcaption></figure>
+        <figure><img src="images/ja/window-button.jpg" alt="サポートバーのボタン"><figcaption>窓を閉める前にこのボタンを押します。</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="ja-manuals">
+    <h2><span class="emoji">📖</span> 設備品の取扱説明書</h2>
+
+    <div class="card">
+      <h3>TP-Link Wi-Fi 無線LAN ルーター</h3>
+      <p>11ac AC2600 1733 + 800 Mbps MU-MIMO IPv6 デュアルバンド ギガビット Archer A10</p>
+      <dl class="kv">
+        <dt>SSID</dt><dd>TP-Link_24A4</dd>
+        <dt>SSID (5G)</dt><dd>TP-Link_24A4_5G</dd>
+        <dt>パスワード (PIN)</dt><dd>51147372</dd>
+      </dl>
+      <p>wi-fiルーターはディスプレイの裏にあります。ネットがつながりにくい場合は、ルーターの電源を一旦抜いて挿し直し、リセットしていただければ繋がる様になります。</p>
+      <p>取説はこちら： <a href="https://www.tp-link.com/jp/support/download/archer-a2600/" target="_blank" rel="noopener">TP-Link Archer A2600 サポート</a></p>
+    </div>
+
+    <div class="card">
+      <h3>MAKITA 充電式クリーナー</h3>
+      <p><a href="https://www.makita.co.jp/product/files/882419M3_D5459.pdf" target="_blank" rel="noopener">取扱説明書 (PDF)</a></p>
+      <p class="red">※充電器はベッドの右側頭側にあります。</p>
+    </div>
+
+    <div class="card">
+      <h3>アイリスオーヤマ オーブンレンジ</h3>
+      <p><a href="https://www.irisohyama.co.jp/products/manual/pdf/516309.pdf" target="_blank" rel="noopener">取扱説明書 (PDF)</a></p>
+    </div>
+
+    <div class="card split">
+      <div>
+        <h3>T-fal IH2028JP [デイリーIH ブラック]</h3>
+        <p><a href="https://www.t-fal.co.jp/consumer-services/instructions-for-use/ih/daily_ih.pdf" target="_blank" rel="noopener">取扱説明書 (PDF)</a></p>
+      </div>
+      <figure><img src="images/ih-portable.jpg" alt="T-fal デイリーIH"></figure>
+    </div>
+
+    <div class="card">
+      <h3>Bose Home Speaker 300</h3>
+      <p><a href="https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/speakers/bose_home_speaker_300/pdfs/830857_og_bose-home-speaker-300_ja.pdf" target="_blank" rel="noopener">取扱説明書 (PDF)</a></p>
+    </div>
+
+    <div class="card">
+      <h3>DMM.make モニター ディスプレイ 55インチ</h3>
+      <p><a href="https://distribution.dmm.com/data/display/dks-dg3/DKS-4KDG3_UserManual.pdf" target="_blank" rel="noopener">取扱説明書 (PDF)</a></p>
+      <ul>
+        <li>Chrome Cast でMac画面を見る： <a href="https://mobilelaby.com/blog-entry-how-to-setup-chromecast.html" target="_blank" rel="noopener">設定方法</a></li>
+        <li>Chrome CastでiPhone画面を見る： <a href="https://www.vodzoo.com/articles/chromecast-iphone-mirroring/" target="_blank" rel="noopener">設定方法</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>セラミックヒーター</h3>
+      <div class="figrow">
+        <figure><img src="images/ceramic-heater.jpg" alt="セラミックヒーター"></figure>
+        <figure><img src="images/ceramic-heater-switch.jpg" alt="背面のメイン電源スイッチ"></figure>
+      </div>
+      <p>先ず背面のスイッチを入れます。その後、上面の右側のON/OFFスイッチを押すとヒーターが作動します。</p>
+      <figure><img src="images/ceramic-heater-panel.jpg" alt="ヒーター上面の操作パネル" style="max-width:520px"></figure>
+      <p>送風ボタンを押すとヒーターが止まり風になります。</p>
+    </div>
+
+    <div class="card split">
+      <div>
+        <h3>無印良品 加湿器</h3>
+        <p>コードレスアロマディフューザー MJ-CAD1 44486320</p>
+        <p>取説： <a href="https://www.muji.com/public/media/jp/doc/item/01_4550344486320_00001.pdf" target="_blank" rel="noopener">取扱説明書 (PDF)</a></p>
+      </div>
+      <figure><img src="images/humidifier.jpg" alt="無印良品 加湿器"></figure>
+    </div>
+  </section>
+
+  <section id="ja-laundry">
+    <h2><span class="emoji">🧺</span> お洗濯／ランドリー・ベッドウェア</h2>
+
+    <div class="card split">
+      <div>
+        <h3>お洗濯／ランドリー</h3>
+        <p>ここから3分のところに、コインランドリー大吉がありますのでご利用ください。また広尾駅前の銭湯にもコインランドリーがあります。洗濯物を入れるネットとして右記をご利用ください。</p>
+        <p>一週間以上ご滞在の方は、ベッドサイドにある茶色い洗濯物かごに入れて洗濯物をお部屋の外においてください。回収して6時間後に仕上げて部屋の前に置いておきます。無料です。なお一週間以内の滞在の方も2000円で洗濯サービスをお受けできます。</p>
+        <p>※アイロン掛けはいたしませんのでアイロンが必要な場合はベッド下に入っているアイロンとアイロン台をご使用ください。</p>
+      </div>
+      <figure><img src="images/laundry-nets.jpg" alt="洗濯ネット"></figure>
+    </div>
+
+    <div class="card">
+      <h3>ベッドウェア・バスウェア・タオルのお取り替え</h3>
+      <p>シーツ・布団／枕カバー、バスタオル／フェイスタオル／ハンドタオル、バスローブ一式の<span class="red">お取り替えは2000円で提供しています。</span></p>
+      <p>お部屋の前に使用済み一式をカゴに入れてお出しください。カゴにお取り替え一式をカゴに入れておいておきます。</p>
+    </div>
+  </section>
+
+  <section id="ja-garbage">
+    <h2><span class="emoji">🗑️</span> ゴミの出し方</h2>
+    <div class="card split">
+      <div>
+        <p class="red">ゴミはビルの前の1Fの階段の右に朝8時までにお出しください。夜は出せません。</p>
+        <ul>
+          <li>土曜日：資源ごみ（新聞雑誌段ボール・缶瓶・ペットボトル）</li>
+          <li>月・木曜日：可燃ごみ（紙・プラスチック・ゴム）</li>
+          <li>毎月第一金曜日：不燃ごみ（陶器・金属・ガラス）</li>
+          <li>予約制tel03-5296-7000：粗大ゴミ（コンビニで粗大券を買う）</li>
+        </ul>
+      </div>
+      <figure><img src="images/trash-location.jpg" alt="ゴミ置き場"></figure>
+    </div>
+    <div class="card">
+      <figure><img src="images/trash-schedule.jpg" alt="資源・ごみ集積所の案内" style="max-width:420px"></figure>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Akikito apt. 4F ハウスマニュアル
+</footer>
+
+</div>
+
 <button id="backToTop" aria-label="Back to top" title="Back to top"><img src="images/upBtn.svg" alt=""></button>
 
 <script>
@@ -427,6 +631,17 @@
   backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+  const buttons = document.querySelectorAll('.langswitch button');
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+    document.title = lang === 'ja' ? 'Akikito apt. 4F ハウスマニュアル' : 'Akikito apt. 4F — House Manual';
+    buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
+    try { localStorage.setItem('lang', lang); } catch (e) {}
+  }
+  buttons.forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+  let initial = (navigator.language || '').startsWith('ja') ? 'ja' : 'en';
+  try { initial = localStorage.getItem('lang') || initial; } catch (e) {}
+  setLang(initial);
 </script>
 
 </body>
